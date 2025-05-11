@@ -23,13 +23,13 @@
         "enablePullDownRefresh": false
       }
     },
-	{
-	  "path": "pages/jiedian/smalljiedian",
-	  "style": {
-	    "navigationBarTitleText": "",
-	    "enablePullDownRefresh": false
-	  }
-	},
+    {
+      "path": "pages/jiedian/smalljiedian",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false
+      }
+    },
     {
       "path": "pages/wallet/wallet",
       "style": {
@@ -96,13 +96,27 @@
         "enablePullDownRefresh": false
       }
     },
-	{
-	  "path": "pages/wallet/team/team",
-	  "style": {
-	    "navigationBarTitleText": "",
-	    "enablePullDownRefresh": false
-	  }
-	},
+    {
+      "path": "pages/wallet/team/index",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/wallet/team/team",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path": "pages/wallet/team/money",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false
+      }
+    },
     {
       "path": "pages/wallet/billDetails/billDetails",
       "style": {
@@ -223,11 +237,10 @@
       }
     },
     {
-    	"path" : "pages/index/demand/demand",
-    	"style" : 
-    	{
-    		"navigationBarTitleText" : ""
-    	}
+      "path": "pages/index/demand/demand",
+      "style": {
+        "navigationBarTitleText": ""
+      }
     }
   ],
   "subPackages": [
@@ -301,41 +314,35 @@
             "navigationStyle": "default",
             "navigationBarBackgroundColor": "#fff"
           }
+        },
+        {
+          "path": "pressureDetails/pressureDetails",
+          "style": {
+            "navigationBarTitleText": "压测详情",
+            "enablePullDownRefresh": false,
+            "navigationStyle": "default",
+            "navigationBarBackgroundColor": "#fff"
+          }
+        },
+        {
+          "path": "pressurePostInfo/pressurePostInfo",
+          "style": {
+            "navigationBarTitleText": "重新提交节点",
+            "enablePullDownRefresh": false,
+            "navigationStyle": "default",
+            "navigationBarBackgroundColor": "#fff"
+          }
+        },
+        {
+          "path": "subimtPresure/subimtPresure",
+          "style": {
+            "navigationBarTitleText": "提交资源",
+            "enablePullDownRefresh": false,
+            "navigationStyle": "default",
+            "navigationBarBackgroundColor": "#fff"
+          }
         }
-          ,{
-                    "path" : "pressureDetails/pressureDetails",
-                    "style" :                                                                                    
-                {
-                    "navigationBarTitleText": "压测详情",
-                    "enablePullDownRefresh": false,
-					"navigationStyle": "default",
-					"navigationBarBackgroundColor": "#fff"
-                }
-                
-                }
-                ,{
-                    "path" : "pressurePostInfo/pressurePostInfo",
-                    "style" :                                                                                    
-                {
-                    "navigationBarTitleText": "重新提交节点",
-                    "enablePullDownRefresh": false,
-					"navigationStyle": "default",
-					"navigationBarBackgroundColor": "#fff"
-                }
-                
-                }
-                ,{
-                    "path" : "subimtPresure/subimtPresure",
-                    "style" :                                                                                    
-                {
-                    "navigationBarTitleText": "提交资源",
-                    "enablePullDownRefresh": false,
-					"navigationStyle": "default",
-					"navigationBarBackgroundColor": "#fff"
-                }
-                
-                }
-            ]
+      ]
     }
   ],
   "globalStyle": {
@@ -363,12 +370,12 @@
         "selectedIconPath": "static/tabbar/jd_ed.png",
         "text": "大节点"
       },
-	  {
-	    "pagePath": "pages/jiedian/smalljiedian",
-	    "iconPath": "static/tabbar/jd.png",
-	    "selectedIconPath": "static/tabbar/jd_ed.png",
-	    "text": "小节点"
-	  },
+      {
+        "pagePath": "pages/jiedian/smalljiedian",
+        "iconPath": "static/tabbar/jd.png",
+        "selectedIconPath": "static/tabbar/jd_ed.png",
+        "text": "小节点"
+      },
       {
         "pagePath": "pages/wallet/wallet",
         "iconPath": "static/tabbar/lc.png",

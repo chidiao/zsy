@@ -36,7 +36,7 @@
       </view>
       <view class="box">
 		  
-		<view class="item" @click="navto('./team/team')">
+		<view class="item" @click="navto('./team/index')">
 		  <view>
 		    <image src="../../static/icon1.png" mode=""></image>
 		    <view>
