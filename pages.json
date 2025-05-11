@@ -1,0 +1,386 @@
+{
+  "easycom": {
+    "^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+  },
+  "pages": [
+    //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+    // #ifdef MP-WEIXIN
+    {
+      "path": "pages/index/splashscreen/splashscreen"
+    },
+    // #endif
+    {
+      "path": "pages/index/index"
+    },
+    {
+      "path": "pages/user/user"
+    },
+
+    {
+      "path": "pages/jiedian/jiedian",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false
+      }
+    },
+	{
+	  "path": "pages/jiedian/smalljiedian",
+	  "style": {
+	    "navigationBarTitleText": "",
+	    "enablePullDownRefresh": false
+	  }
+	},
+    {
+      "path": "pages/wallet/wallet",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false
+      }
+    },
+
+    {
+      "path": "pages/jiedian/detail/detail",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path": "pages/jiedian/detail/monitor/monitor",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false,
+        "disableScroll": true
+      }
+    },
+
+    {
+      "path": "pages/jiedian/testResult/testResult",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path": "pages/jiedian/networkInfo/networkInfo",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path": "pages/jiedian/networkInfo/setAccount/setAccount",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path": "pages/jiedian/networkInfo/adjustLine/adjustLine",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path": "pages/jiedian/networkInfo/setAccount/set/set",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path": "pages/wallet/tixian/tixian",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false
+      }
+    },
+	{
+	  "path": "pages/wallet/team/team",
+	  "style": {
+	    "navigationBarTitleText": "",
+	    "enablePullDownRefresh": false
+	  }
+	},
+    {
+      "path": "pages/wallet/billDetails/billDetails",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path": "pages/wallet/tixianList/tixianList",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path": "pages/wallet/info/info",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path": "pages/wallet/info/set/set",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path": "pages/user/userInfo/userInfo",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path": "pages/user/news/news",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path": "pages/user/help/help",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path": "pages/user/xieyi/xieyi",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path": "pages/user/news/detail/detail",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path": "pages/jiedian/networkInfo/setAccount/batchUp/batchUp",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false
+      }
+    },
+
+    {
+      "path": "pages/user/changeName/changeName",
+      "style": {
+        "navigationBarTitleText": "修改昵称",
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path": "pages/user/contact-service/contact-service",
+      "style": {
+        "navigationBarTitleText": "联系客服",
+        "enablePullDownRefresh": false,
+        "navigationStyle": "default",
+        "navigationBarBackgroundColor": "#fff"
+      }
+    },
+    {
+      "path": "pages/user/feedback/feedback",
+      "style": {
+        "navigationBarTitleText": "意见反馈",
+        "enablePullDownRefresh": false,
+        "navigationStyle": "default",
+        "navigationBarBackgroundColor": "#fff"
+      }
+    },
+    {
+      "path": "pages/user/setting/setting",
+      "style": {
+        "navigationBarTitleText": "设置中心",
+        "enablePullDownRefresh": false,
+        "navigationStyle": "default",
+        "navigationBarBackgroundColor": "#fff"
+      }
+    },
+    {
+      "path": "pages/jiedian/detail/setManager/setManager",
+      "style": {
+        "navigationBarTitleText": "管理网卡",
+        "navigationStyle": "default"
+      }
+    },
+    {
+      "path": "pages/user/download/download",
+      "style": {
+        "navigationBarTitleText": "下载APP",
+        "navigationStyle": "default"
+      }
+    },
+    {
+    	"path" : "pages/index/demand/demand",
+    	"style" : 
+    	{
+    		"navigationBarTitleText" : ""
+    	}
+    }
+  ],
+  "subPackages": [
+    {
+      "root": "pages/login",
+      "pages": [
+        {
+          "path": "login",
+          "style": {
+            "navigationBarTitleText": "",
+            "enablePullDownRefresh": false
+          }
+        },
+        {
+          "path": "register/register",
+          "style": {
+            "navigationBarTitleText": "",
+            "enablePullDownRefresh": false
+          }
+        },
+        {
+          "path": "forgotPass/forgotPass",
+          "style": {
+            "navigationBarTitleText": "",
+            "enablePullDownRefresh": false
+          }
+        },
+        {
+          "path": "changePhone/changePhone",
+          "style": {
+            "navigationBarTitleText": "修改手机号",
+            "enablePullDownRefresh": false
+          }
+        }
+      ]
+    },
+    {
+      "root": "pages/index/bindDevice",
+      "pages": [
+        {
+          "path": "line/line",
+          "style": {
+            "navigationBarTitleText": "",
+            "enablePullDownRefresh": false
+          }
+        },
+        {
+          "path": "bindDevice",
+          "style": {
+            "navigationBarTitleText": "",
+            "enablePullDownRefresh": false
+          }
+        },
+        {
+          "path": "charging/charging",
+          "style": {
+            "navigationBarTitleText": "",
+            "enablePullDownRefresh": false
+          }
+        }
+      ]
+    },
+    {
+      "root": "pages/node_details",
+      "pages": [
+        {
+          "path": "details/details",
+          "style": {
+            "navigationBarTitleText": "节点详情",
+            "enablePullDownRefresh": false,
+            "navigationStyle": "default",
+            "navigationBarBackgroundColor": "#fff"
+          }
+        }
+          ,{
+                    "path" : "pressureDetails/pressureDetails",
+                    "style" :                                                                                    
+                {
+                    "navigationBarTitleText": "压测详情",
+                    "enablePullDownRefresh": false,
+					"navigationStyle": "default",
+					"navigationBarBackgroundColor": "#fff"
+                }
+                
+                }
+                ,{
+                    "path" : "pressurePostInfo/pressurePostInfo",
+                    "style" :                                                                                    
+                {
+                    "navigationBarTitleText": "重新提交节点",
+                    "enablePullDownRefresh": false,
+					"navigationStyle": "default",
+					"navigationBarBackgroundColor": "#fff"
+                }
+                
+                }
+                ,{
+                    "path" : "subimtPresure/subimtPresure",
+                    "style" :                                                                                    
+                {
+                    "navigationBarTitleText": "提交资源",
+                    "enablePullDownRefresh": false,
+					"navigationStyle": "default",
+					"navigationBarBackgroundColor": "#fff"
+                }
+                
+                }
+            ]
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "卓思云",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8",
+    "navigationStyle": "custom"
+  },
+  "tabBar": {
+    "color": "#D4D4D4",
+    "selectedColor": "#333333",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/tabbar/home.png",
+        "selectedIconPath": "static/tabbar/home_ed.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/jiedian/jiedian",
+        "iconPath": "static/tabbar/jd.png",
+        "selectedIconPath": "static/tabbar/jd_ed.png",
+        "text": "大节点"
+      },
+	  {
+	    "pagePath": "pages/jiedian/smalljiedian",
+	    "iconPath": "static/tabbar/jd.png",
+	    "selectedIconPath": "static/tabbar/jd_ed.png",
+	    "text": "小节点"
+	  },
+      {
+        "pagePath": "pages/wallet/wallet",
+        "iconPath": "static/tabbar/lc.png",
+        "selectedIconPath": "static/tabbar/lc_ed.png",
+        "text": "理财"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "iconPath": "static/tabbar/me.png",
+        "selectedIconPath": "static/tabbar/me_ed.png",
+        "text": "我的"
+      }
+    ]
+  }
+}
