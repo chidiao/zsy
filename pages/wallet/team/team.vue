@@ -127,7 +127,7 @@ export default {
     },
     onSetRate(params) {
       this.setRate({
-        uid: this.selectedItem.uid,
+        uid: this.selectedItem.id,
         ...params
       })
     },
