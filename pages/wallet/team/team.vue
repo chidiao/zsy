@@ -37,7 +37,7 @@
       </view>
     </scroll-view>
 
-    <team-rate :show="showRate" @close="showRate = false"></team-rate>
+    <team-rate :show="showRate" @close="showRate = false" @submit="onSetRate"></team-rate>
   </view>
 </template>
 
@@ -125,9 +125,28 @@ export default {
       this.selectedItem = item
       this.showRate = true
     },
-    setRate(item) {
-      this.selectedItem = item
-      this.showRate = true
+    onSetRate(params) {
+      this.setRate({
+        uid: this.selectedItem.uid,
+        ...params
+      })
+    },
+    async setRate(params) {
+      try {
+        uni.showLoading({
+          title: 'loading'
+        })
+        const { msg } = await this.$api.setTeamRate(params)
+        uni.showToast({
+          title: msg,
+          icon: 'none'
+        })
+        this.reset()
+      } catch (e) {
+        //
+      } finally {
+        uni.hideLoading()
+      }
     }
   }
 }

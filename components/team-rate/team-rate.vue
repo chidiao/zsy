@@ -25,6 +25,10 @@
 
           <view style="position: absolute; inset: 0; z-index: 9" @click="showLevels = true"> </view>
         </view>
+
+        <view style="padding-top: 15px" @click="submit">
+          <u-button type="primary">确定</u-button>
+        </view>
       </view>
     </u-popup>
 
@@ -32,6 +36,7 @@
       :show="showLevels"
       :columns="levels"
       keyName="label"
+      @cancel="showLevels = false"
       @close="showLevels = false"
       @confirm="onLevel"
     ></u-picker>
@@ -41,7 +46,7 @@
 <script>
 export default {
   props: ['show'],
-  emits: ['close'],
+  emits: ['close', 'submit'],
   data() {
     return {
       rate: 0,
@@ -74,6 +79,11 @@ export default {
     }
   },
   watch: {
+    show(val) {
+      if (val) {
+        this.reset()
+      }
+    },
     rate(newVal, oldVal) {
       let num = parseFloat(newVal)
 
@@ -106,6 +116,21 @@ export default {
     reset() {
       this.rate = 0
       this.level = 0
+    },
+    submit() {
+      this.$emit('close')
+
+      if (this.level == 0) {
+        uni.showToast({
+          title: '参数无效',
+          icon: 'none'
+        })
+      } else {
+        this.$emit('submit', {
+          rate: this.rate,
+          level: this.level
+        })
+      }
     }
   }
 }
